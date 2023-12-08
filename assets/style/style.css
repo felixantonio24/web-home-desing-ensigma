@@ -34,12 +34,26 @@ body{
     gap: 50px;
     margin-top: 41.5px;
     list-style-type:none; 
+    justify-content: center;
+    
     
 }
 .container_navlis li a{
     text-decoration: none;
     color: var(--white);
     cursor: pointer;
+
+}
+.container_navlista {
+    color: var(--white);
+    cursor: pointer;
+   box-shadow: 0px  yellow;
+} 
+
+
+.container_navlista a:hover{
+    color: yellow ;
+
 }
 
 
@@ -52,8 +66,18 @@ body{
 
 .lis_registro{
     display: flex;
+    gap: 15px;
+    margin-left: 15rem ;
 }
 
+.lisregistro_nav a{
+    display: flex;
+    padding: 4px;
+    margin-top: -3px;
+    width: 9rem ;
+    justify-content: center;
+
+}
 .nav_text{
     color:var(--white);
     text-decoration: none;
@@ -61,7 +85,7 @@ body{
 
 }
 .space{
-    margin-top: 3%;
+    margin-top: 5%;
 }
 .container_header{
    display: flex;
@@ -75,39 +99,39 @@ body{
 .img_header{
     position: relative;
     width: 39rem;
-    margin-left: 55rem;
-    bottom: 20rem;
+    margin-left: 61rem;
+    bottom: 27rem;
     z-index: -1;
-    filter: saturate(200%) contrast(150%);
-
+    filter: saturate(90%) contrast(150%);
+    
 }
 .text_corto{
     color: var(--white);
     font-size: 28px;
     font-family: sans-serif;
-    margin-left: 55px;
+    margin-left: 120px;
     
 }
 
 
 header{
     color: var(--white);
-    margin-bottom: 200px;
+    margin-bottom: 260px;
 }
 .titler_header{
     font-size: 57px;
     font-weight: 900;
     font-family: sans-serif;
     margin: 1%;
-    margin-left: 54px;
+    margin-left: 120px;
     padding-right: 40rem;
 
 }
 .parr_header{
-    margin-left: 55px;
+    margin-left: 120px;
     font-family: sans-serif;
     font-size: 20px;
-    padding-right: 40rem;
+    padding-right: 45rem;
 
 }
 
@@ -117,6 +141,27 @@ header{
     color: var(--black);
     font-weight: bold;
     padding: 15px;
-    margin-left: 50px;
+    margin-left: 120px;
     cursor: pointer;
 }
+/* hover for button (botones derecha) */
+.container_navlista:hover {
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: 0px 2px yellow;
+    
+} 
+
+/*hover for button(botones izquierda)*/
+.lisregistro_nav a:hover{
+
+background-color: yellow;
+border-radius: 20px;
+}
+.lisregistro_nav a:hover{
+ color: black;
+font-weight: bold;
+cursor: pointer;
+}
+
+
