@@ -85,53 +85,59 @@ body{
 
 }
 .space{
-    margin-top: 5%;
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    gap: 165px;
 }
-.container_header{
-   display: flex;
-   justify-content: center;
-   gap: 10px;
-   position:absolute;
-   z-index: 1;
-  
 
-}
-.img_header{
-    position: relative;
-    width: 39rem;
-    margin-left: 61rem;
-    bottom: 27rem;
-    z-index: -1;
-    filter: saturate(90%) contrast(150%);
-    
-}
+
+
+
 .text_corto{
     color: var(--white);
     font-size: 28px;
     font-family: sans-serif;
-    margin-left: 120px;
-    
+
 }
 
 
 header{
     color: var(--white);
-    margin-bottom: 260px;
+  
 }
+
+
+.container_2header{
+    display: flex; /* Esto crea un contenedor flexible para alinear los elementos */
+    justify-content: center;
+    width: 50%;
+    padding: 50px;
+    height: 300px;
+    margin-left: 10rem;
+    float: right;
+}
+.bloque1{
+    flex: 1;
+    float:right;
+    padding: 0;
+    margin: 0;
+
+
+}
+    
 .titler_header{
     font-size: 57px;
     font-weight: 900;
     font-family: sans-serif;
-    margin: 1%;
-    margin-left: 120px;
-    padding-right: 40rem;
+    padding-right: 10rem;
 
 }
 .parr_header{
-    margin-left: 120px;
+    margin-left: 10px;
     font-family: sans-serif;
     font-size: 20px;
-    padding-right: 45rem;
+    padding-right: 2rem;
 
 }
 
@@ -144,6 +150,23 @@ header{
     margin-left: 120px;
     cursor: pointer;
 }
+.bbloque2{
+   flex: 1;
+   justify-content: center;
+   float: right;
+
+   
+}
+
+.img_header{
+ 
+    filter: saturate(90%) contrast(150%);
+     width: 45rem;
+     margin-right: 10%;
+  
+}
+
+
 /* hover for button (botones derecha) */
 .container_navlista:hover {
     color: var(--white);
@@ -164,4 +187,50 @@ font-weight: bold;
 cursor: pointer;
 }
 
+/*segunda hoja*/
+.comilla{
+    width: 5rem;
+    height: 5rem;
+    justify-content: center;
+    display: flex;
+    margin-left: 5%;
+}
+section{
+   display: flex;
+   justify-content: center;
+}
 
+.contain{
+    margin-top: 10%;
+}
+
+
+.h2_header2{
+    margin-left: 155px;
+    font-family: sans-serif;
+    font-size: 30px;
+    padding-right: 45rem;
+    color: var(--white);
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: rgb(83, 83, 83);
+   color: var(--white);
+   padding: 20px;
+ 
+   width: 100%;
+}
