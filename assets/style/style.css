@@ -13,7 +13,9 @@
 
 }
 body{
-    background-color: var(--black);}
+    background-color: var(--black);
+    overflow-x:hidden ;
+}
 
     nav{
         color: var(--white);
@@ -64,6 +66,7 @@ body{
 }
 
 
+
 .lis_registro{
     display: flex;
     gap: 15px;
@@ -105,6 +108,13 @@ body{
 header{
     color: var(--white);
   
+}
+#modal{
+    display: none;
+}
+
+.modal--lister{
+   background-color: #f9fafc;
 }
 
 
@@ -213,6 +223,10 @@ section{
     color: var(--white);
     
 
+}
+.container_main{
+    color: var(--white);
+    display: flex;
 }
 
 
