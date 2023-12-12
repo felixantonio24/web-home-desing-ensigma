@@ -211,6 +211,7 @@ section{
 
 .contain{
     margin-top: 10%;
+    
 }
 
 
@@ -226,6 +227,24 @@ section{
 .container_main{
     color: var(--white);
     display: flex;
+    margin-left: 150px;
+    gap: 50px;
+}
+
+
+
+.porcent{
+    font-size: 70px;
+    margin: 0;
+}
+.parr_area1{
+width: 20rem;
+}
+.parr_area2{
+width: 20rem;
+}
+.parr_area3{
+width: 20rem;
 }
 
 
