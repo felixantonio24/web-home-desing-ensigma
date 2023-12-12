@@ -46,10 +46,12 @@ body{
     cursor: pointer;
 
 }
-.container_navlista {
+.container_navlista{
     color: var(--white);
     cursor: pointer;
    box-shadow: 0px  yellow;
+   list-style-type: none;
+   
 } 
 
 
@@ -71,14 +73,20 @@ body{
     display: flex;
     gap: 15px;
     margin-left: 15rem ;
+    
 }
 
-.lisregistro_nav a{
+.lisregistro_nav {
     display: flex;
     padding: 4px;
     margin-top: -3px;
     width: 9rem ;
     justify-content: center;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: var(--black);
+    border: none;
+    font-size: 16px;
 
 }
 .nav_text{
@@ -96,7 +104,6 @@ body{
 
 
 
-
 .text_corto{
     color: var(--white);
     font-size: 28px;
@@ -109,14 +116,6 @@ header{
     color: var(--white);
   
 }
-#modal{
-    display: none;
-}
-
-.modal--lister{
-   background-color: #f9fafc;
-}
-
 
 .container_2header{
     display: flex; /* Esto crea un contenedor flexible para alinear los elementos */
@@ -186,12 +185,12 @@ header{
 } 
 
 /*hover for button(botones izquierda)*/
-.lisregistro_nav a:hover{
+.lisregistro_nav:hover{
 
 background-color: yellow;
 border-radius: 20px;
 }
-.lisregistro_nav a:hover{
+.lisregistro_nav:hover{
  color: black;
 font-weight: bold;
 cursor: pointer;
@@ -248,3 +247,4 @@ footer{
  
    width: 100%;
 }
+
