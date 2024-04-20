@@ -237,6 +237,22 @@ section{
     align-items: center;
 }
 
+.datos_tittle_login{
+    font-size:45px;
+    text-shadow: 1px 2px 1px black;
+}
+.usuario_login{
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(26, 3, 3);
+    font-family: 'Times New Roman', Times, serif;
+}
+.contraseña_text{
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(26, 3, 3);
+    font-family: 'Times New Roman', Times, serif;
+}
 
 
 .porcent{
@@ -254,26 +270,27 @@ width: 20rem;
 }
 
 .container_login{
-background-color: white;
-color: rgb(4, 0, 0);
+background-color: rgb(77, 77, 72);
+color: rgb(255, 255, 255);
 display: flex;
 justify-content: center;
 height: 250px;
 border-radius: 30px;
 transition: opacity 0.6s ease;
 width: 23rem;
-margin-left: 450px;
+margin-left: 600px;
 display: none;
 opacity: 0;
-z-index: 2;
+z-index: 3;
 position: absolute;
 text-align: center;
+
 
 }
 
 .label1{
     display: flex;
-    gap: 35px;
+    gap: 39px;
    
     display: flex;
     justify-content: center;
@@ -289,7 +306,10 @@ text-align: center;
 header, main{
     z-index: 1;
 }
-
+.cotainer_info{
+    margin-top: -480px;
+   ;
+}
 
 
 .container_nav{
@@ -297,6 +317,13 @@ header, main{
     position: relative;
 }
 
+.img-login{
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    border-radius: 30px;
+}
 
 footer{
     background-color: rgb(83, 83, 83);
