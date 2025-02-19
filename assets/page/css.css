@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+}
+header{
+    box-sizing: border-box;
+}
+.container_header_contacto{
+    display: block;
+    background-color: black;
+    color:white;
+    margin-left: 60vh;
+    margin-top: 15em;
+}

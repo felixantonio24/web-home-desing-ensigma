@@ -18,3 +18,24 @@ function CloseContainer (){
 
 loginButton.addEventListener("click", abrirModal);
 close.addEventListener("click",CloseContainer )
+
+
+const mover = document.querySelector("#open")
+
+mover.addEventListener("click", ()=>{
+    const barrquequiero = document.querySelector(".h2_header2");
+    if(barrquequiero){  
+    barrquequiero.scrollIntoView({ behavior: "smooth"});
+ }
+})
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+  
+  document.querySelectorAll('.container_principalmain').forEach(element => observer.observe(element));

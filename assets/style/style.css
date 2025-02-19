@@ -32,6 +32,16 @@ body{
    
 
 }
+.container_principalmain {
+    opacity: 0; /* Inicialmente oculto */
+    transform: translateY(20px); /* Desplazado hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transición suave */
+  }
+  
+  .container_principalmain.visible {
+    opacity: 1; /* Visible al hacer scroll */
+    transform: translateY(0); /* Posición original */
+  }
 
 .container_navlis{
     display:flex;
@@ -105,6 +115,20 @@ body{
     display: flex;
     justify-content: center;
     gap: 165px;
+    transform: traslateX(50px);
+    animation: subirArrba 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes subirArrba {
+    from{
+        opacity: 0;
+        transform: translateY(90px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(10px);
+    }
 }
 
 
