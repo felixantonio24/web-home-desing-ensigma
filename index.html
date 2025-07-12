@@ -1,121 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENsigma||felix</title>
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
-
-
-<body> 
-<div class="assetss"> 
-    <!-- LOOGIN -->
-<div class="container_login">  
- 
-<div class="container_login2"> 
- <img src="assets/img/smB.gif" alt="" class="img-login">
-    <div class=" cotainer_info"> 
-        <button class="cerrar">X</button>
-    <h2 class="datos_tittle_login">Datos Personales</h2>
-    <div class="label1">
-    <label for="text" class="usuario_login"> Usuario</label>
-    <input type="text" placeholder="Write.."> 
-    </div> <hr class="br">
-     
-     <div class="label2"> 
-    <label for="text2" class="contraseña_text">Contraseña</label>
-    <input type="password"placeholder="Write.." class="a">
+<body>
+    <!-- Modal Login -->
+    <div class="container_login">  
+        <div class="container_login2"> 
+            <img src="assets/img/smB.gif" alt="" class="img-login">
+            <div class="cotainer_info"> 
+                <button class="cerrar">X</button>
+                <h2 class="datos_tittle_login">Datos Personales</h2>
+                <div class="label1">
+                    <label for="usuario" class="usuario_login">Usuario</label>
+                    <input type="text" id="usuario" placeholder="Escribe tu usuario"> 
+                </div>
+                <hr class="br">
+                <div class="label2"> 
+                    <label for="password" class="contraseña_text">Contraseña</label>
+                    <input type="password" id="password" placeholder="Escribe tu contraseña">
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-   
-    
-</div>
- </div>
-    
+
+    <!-- Navbar -->
     <nav class="container_nav"> 
-        <div class="nav_text"> <img src="assets/img/header palillos.jpg" alt="plarillos" class="img_nav__platillos">ENSIGNA</div>
+        <div class="nav_text">
+            <img src="assets/img/header palillos.jpg" alt="platillos" class="img_nav__platillos">ENSIGNA
+        </div>
         <ul class="container_navlis">
-           
-            <li class="container_navlista"> <a href="INICIO"> INICIO </a>   </li>
-            <li  class="container_navlista"> <a href="SERVICIO"> SERVICIO</a>  </li>
-            <li class="container_navlista"> <a href="PLANES"> PLANES </a>   </li>
-            <li class="container_navlista"> <a href="assets\page\contacto.html"> CONTACTO</a>  </li>
-             
-        <div class="lis_registro">
-           <button id="logins" class="lisregistro_nav"> INICIAR SECION </button> 
-           <button id="create" class="lisregistro_nav">REGISTRO </button> 
+            <li class="container_navlista"><a href="#">INICIO</a></li>
+            <li class="container_navlista"><a href="#">SERVICIO</a></li>
+            <li class="container_navlista"><a href="#">PLANES</a></li>
+            <li class="container_navlista"><a href="assets/page/contacto.html">CONTACTO</a></li>
+            <div class="lis_registro">
+                <button id="logins" class="lisregistro_nav">INICIAR SESIÓN</button> 
+                <button id="create" class="lisregistro_nav">REGISTRO</button> 
+            </div>
         </ul>
-        </div>
     </nav>
-    
-<header>
 
-   <div class="space"> 
-        <div class="container_2header">
-        
-            <div class="bloque1"><span class="text_corto">A TU ALCANCE</span>
-        <h1 class="titler_header">
-            PROYECTO TEGNOLOGICO</h1>
-        <p class="parr_header">Lorem ipsum dolor sit amet, consecte
-            tur adipisicing elit. Voluptas sed et vero provident laborum optio repellat labore commodi blanditiis! Ex modi laboriosam corporis natus esse ratione nisi similique velit quos..?</p>
-            
-   
-    <button class="span_btn_header" id="open">DESCÚBRELO</h2></button></div>
+    <!-- Header -->
+    <header>
+        <div class="space"> 
+            <div class="container_2header">
+                <div class="bloque1">
+                    <span class="text_corto">A TU ALCANCE</span>
+                    <h1 class="titler_header">PROYECTO TECNOLÓGICO</h1>
+                    <p class="parr_header">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sed et vero provident laborum optio repellat labore commodi blanditiis!</p>
+                    <button class="span_btn_header" id="open">DESCÚBRELO</button>
+                </div>
+            </div>
+            <div class="bloque2">
+                <img src="assets/img/img header.webp" alt="tecnología" class="img_header">
+            </div>
         </div>
+    </header>
 
-    <div class="bloque2" >
-        <img src="assets/img/img header.webp" alt="imagencolorida"class="img_header">
-    </div>
-    </div>
-</header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--segunda hoja-->
-<main>
+    <!-- Main Content -->
+    <main>
         <div class="container_principalmain">  
-   
-        <div class="contain">
-            <img src="assets/img/comillas-img.webp" alt="comilaicon" class="comilla"></div>
-        <h2 class="h2_header2"> Descubre hoy el futuro de los servicios y las nuevas tecnologías que potenciarán el crecimiento de tu empresa. </h2>  
-<br>
-<br>
-    <div class="container_main">
-        <div > 
-            <h2 class="porcent"> 152%</h2>
-            <p class="parr_area1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a enim nec nisl ullamcorper eleifend. Praesent risus leo, fringilla et nulla at, egestas euismod orci. </p>
+            <div class="contain">
+                <img src="assets/img/comillas-img.webp" alt="comillas" class="comilla">
+            </div>
+            <h2 class="h2_header2">Descubre hoy el futuro de los servicios y las nuevas tecnologías</h2>  
+            <div class="container_main">
+                <div> 
+                    <h2 class="porcent">152%</h2>
+                    <p class="parr_area1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div> 
+                    <h2 class="porcent">25k</h2>
+                    <p class="parr_area2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div>
+                    <h2 class="porcent">1256</h2>
+                    <p class="parr_area3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
         </div>
-        <div > 
-            <h2 class="porcent">25k</h2>
-            <p class="parr_area2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a enim nec nisl ullamcorper eleifend. Praesent risus leo, fringilla et nulla at, egestas euismod orci. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            </p>
-        </div>
-        <div >
-            <h2 class="porcent">1256</h2>
-            <p class="parr_area3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a enim nec nisl ullamcorper eleifend. Praesent risus leo, fringilla et nulla at, egestas euismod orci. </p>
-        </div>
-    </div>
     </main>
-    
 
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 ENsigma. Todos los derechos reservados.</p>
+    </footer>
 
-
-<script src="assets/js/main.js"></script>
-</div>
+    <script src="assets/js/main.js"></script>
 </body>
-
-</footer>
 </html>

@@ -1,41 +1,57 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Elementos del DOM
+    const loginButton = document.getElementById('logins');
+    const modal = document.querySelector('.container_login');
+    const closeButton = document.querySelector('.cerrar');
+    const body = document.body;
 
-const loginButton = document.querySelector("#logins");
-const modal = document.querySelector(".container_login");
-const image = document.querySelector(".img_header")
-const close = document.querySelector(".cerrar")
-function abrirModal() {
-    modal.style.display = "block";
-    image.style.opacity= "0.2"
-    setTimeout(() => {
-        modal.style.opacity = "1";
-    }, 10); // Espera 10ms para asegurarse de que el cambio de display a block ocurra antes de cambiar la opacidad
-}
+    // Abrir modal
+    function openModal() {
+        modal.classList.add('visible');
+        body.classList.add('modal-open');
+    }
 
-function CloseContainer (){
-    modal.style.display="none";
-    image.style.opacity= "1"
-}
+    // Cerrar modal
+    function closeModal() {
+        modal.classList.remove('visible');
+        body.classList.remove('modal-open');
+    }
 
-loginButton.addEventListener("click", abrirModal);
-close.addEventListener("click",CloseContainer )
+    // Event listeners
+    loginButton.addEventListener('click', openModal);
+    closeButton.addEventListener('click', closeModal);
 
-
-const mover = document.querySelector("#open")
-
-mover.addEventListener("click", ()=>{
-    const barrquequiero = document.querySelector(".h2_header2");
-    if(barrquequiero){  
-    barrquequiero.scrollIntoView({ behavior: "smooth"});
- }
-})
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
+    // Cerrar al hacer clic fuera del modal
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
     });
-  });
-  
-  document.querySelectorAll('.container_principalmain').forEach(element => observer.observe(element));
+
+    // Scroll suave para el botón DESCÚBRELO
+    document.getElementById('open').addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector('.h2_header2');
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+
+    // Observer para animaciones
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    // Observar elementos
+    const elementsToObserve = document.querySelectorAll('.container_principalmain');
+    elementsToObserve.forEach(el => observer.observe(el));
+});
